@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  postgresql:
+    image: postgres:12-alpine
+    ports:
+      - 9999:9999
+    environment:
+      - POSTGRES_DB=app
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=12345
